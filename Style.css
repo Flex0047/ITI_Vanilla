@@ -1,0 +1,168 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+        }
+
+        .container {
+        width: 90%;
+        margin: auto;
+        }
+
+        nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #0b2c5d;
+        padding: 15px 5%;
+        color: white;
+        }
+
+        .logo img {
+        width: 150px;
+        height: auto;
+        }
+
+        .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        }
+
+        .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        }
+
+        .nav-links a i {
+        margin-left: 6px;
+        font-size: 12px;
+        transition: transform 0.3s ease;
+        }
+
+        .nav-links a:hover i {
+        transform: rotate(180deg);
+        }
+
+        .buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        }
+
+        button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        }
+
+        .login-btn {
+        background-color: #feda75;
+        color: #0b2c5d;
+        }
+        
+        .cta-btn {
+        background-color: #4f93ff;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        z-index: 12;
+        }
+
+        .hero-section {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0b2c5d;
+        color: white;
+        padding: 0 5%;
+        background-image: url(/Img/Element.png);
+        }
+
+        .hero-text {
+        max-width: 500px;
+        }
+
+        .hero-text h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        }
+
+        .hero-text p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        }
+
+        .hero-text .cta-btn {
+        padding: 12px 24px;
+        }
+
+        .hero-image {
+        width: 500px;
+        height: 300px;
+        background-color: #cce0ff;
+        border-radius: 8px;
+        }
+        .project-management-section,
+        .work-together-section {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 5%;
+        background-color: #fff;
+        color: #333;
+        }
+
+        .project-management-section .left-section,
+        .work-together-section .right-section {
+        max-width: 500px;
+        }
+
+        .main-title,
+        .section-title {
+        font-size: 42px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        }
+
+        .description,
+        .section-description {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        color: #666;
+        }
+
+        .project-management-image {
+        width: 500px;
+        height: 300px;
+        background-color: #cce0ff;
+        border-radius: 8px;
+        }
+
+        .work-together-section img {
+            width: 400px;
+        }

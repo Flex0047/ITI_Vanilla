@@ -1,0 +1,80 @@
+/* Tablets and below (<= 992px) */
+    @media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .project-management-section,
+    .work-together-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .project-management-image,
+    .work-together-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section::after {
+        display: none; /* Hide decorative image on small screens */
+    }
+    }
+
+    /* Phones (<= 576px) */
+    @media (max-width: 576px) {
+    .hero-text h1,
+    .main-title,
+    .section-title {
+        font-size: 32px;
+    }
+
+    .hero-text p,
+    .description,
+    .section-description {
+        font-size: 16px;
+    }
+
+    button,
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+    }
