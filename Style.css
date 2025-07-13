@@ -166,3 +166,8 @@
         .work-together-section img {
             width: 400px;
         }
+
+.section-title::after,
+.main-title::after {
+        content: url(/Img/Vector.png);
+    }
