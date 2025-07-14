@@ -41,7 +41,7 @@
 
     .project-management-image,
     .work-together-section img {
-        width: 100%;
+        width: 60%;
         height: auto;
     }
 
@@ -70,11 +70,30 @@
         padding: 10px 16px;
     }
 
-    .logo img {
+    /* .logo img {
         width: 120px;
-    }
+    } */
 
+    .work-together-section img
+    {
+        width: 50%;
+    }
     .nav-links a {
         font-size: 14px;
     }
     }
+
+
+
+
+    /*   Responsiv Design 
+    @media (max-width: 992px) {
+        .container .main-content h1 {
+            font-size: 20px;
+        }
+
+        .container .main-content .primary {
+            font-size: 15px;
+        }
+    }
+ */
