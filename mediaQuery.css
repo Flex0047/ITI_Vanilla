@@ -48,14 +48,36 @@
     .left-section::after {
         display: none; /* Hide decorative image on small screens */
     }
+
+    .container-footer {
+    font-size: small;
+    line-height: 30px;
+}
+    .col-about img {
+        width:150px ;
     }
 
+    .try-today h3{
+    font-size: 18px;
+    }
+
+    .try-today .cta-btn {
+        width: fit-content;
+        font-size: 10px;
+        padding: 13px;
+    }
+    .groupInfo {
+    width: 42%;
+    gap: 20%;
+    }
+    }
+        
     /* Phones (<= 576px) */
-    @media (max-width: 576px) {
+    @media (max-width: 642px) {
     .hero-text h1,
     .main-title,
     .section-title {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .hero-text p,
@@ -70,9 +92,6 @@
         padding: 10px 16px;
     }
 
-    /* .logo img {
-        width: 120px;
-    } */
 
     .work-together-section img
     {
@@ -82,18 +101,3 @@
         font-size: 14px;
     }
     }
-
-
-
-
-    /*   Responsiv Design 
-    @media (max-width: 992px) {
-        .container .main-content h1 {
-            font-size: 20px;
-        }
-
-        .container .main-content .primary {
-            font-size: 15px;
-        }
-    }
- */
