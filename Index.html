@@ -1,147 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Whitepace</title>
+  <head>
+    <title>LearnSpace - Online Course Platform</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="/mediaQuery.css">
-    </head>
-    <body>
-        <nav>
-            <div class="logo">
-            <img src="/Img/Logo.png" alt="Whitepace Logo">
-            </div>
-            <div class="nav-links">
-                <a href="#">Products <i class="fas fa-chevron-down"></i></a>
-                <a href="#">Solutions <i class="fas fa-chevron-down"></i></a>
-                <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
-                <a href="#">Pricing <i class="fas fa-chevron-down"></i></a>
-                <div class="buttons">
-                    <button class="login-btn">Login</button>
-                    <button class="cta-btn">Try Whitepace free →</button>
-                </div>
-            </div>
-        </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <section class="hero-section"> 
-                <div class="hero-text">
-                <h1>Get More Done with<br>whitepace</h1>
-                <p>
-                    Project management software that enables your teams to collaborate, plan,
-                    analyze and manage everyday tasks.
-                </p>
-                <button class="cta-btn">Try Whitepace free →</button>
-                </div>
-                <div class="hero-image"></div>
-            
-        </section>
-        <section class="project-management-section">
-            <div class="left-section">
-            <h1 class="main-title">Project<br>Management</h1>
-            <p class="description">
-                Images, videos, PDFs and audio files are supported. Create math expressions and
-                diagrams directly from the app. Take photos with the mobile app and save them
-                to a note.
-            </p>
-            <button class="cta-btn">Get Started →</button>
-            </div>
-            <div class="project-management-image"></div>
-        </section>
-
-        <section class="work-together-section">
-            <img src="/Img/Work Together Image.png" alt="">
-            <div class="right-section">
-            <h1 class="section-title">Work together</h1>
-            <p class="section-description">
-                With Whitepace, share your notes with your colleagues and collaborate on them.
-                You can also publish a note to the internet and share the URL with others.
-            </p>
-            <button class="cta-btn">Try it now →</button>
-            </div>
-        </section>
-
-        <div class="Contact-card">
-        <div class="content">
-            <div class="main-content">
-                <h1>Try Whitepace <br> today</h1>
-                <p>Get started for free. <br> Add your whole team as your needs grow.</p>
-                <button class="cta-btn">Try Taskey Free →</button>
-                <p class="contact-sales">On a big team? Contact sales</p>
-                <div class="icons">
-                    <i class="fab fa-apple"></i>
-                    <i class="fab fa-windows"></i>
-                    <i class="fab fa-android"></i>
-                </div>
-            </div>
+  <body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu-header">
+          <img src="Img/Logo.png" alt="LearnSpace Logo" />
+          <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
+        <div class="mobile-menu-links">
+          <a href="courses.html">Courses</a>
+          <a href="#categories">Categories</a>
+          <a href="#testimonials">Testimonials</a>
+
+          <a href="cart.html">Cart</a>
+          <div class="mobile-menu-buttons">
+            <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="cta-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="Img/Logo.png" alt="LearnSpace Logo" /></a>
+      </div>
+      <div class="nav-links">
+        <a href="courses.html">Courses</a>
+        <a href="#categories">Categories</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="cart.html" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+          Cart <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <div class="buttons">
+          <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+          <button class="cta-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+      </div>
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Learn New Skills<br />with LearnSpace</h1>
+        <p>
+          Discover thousands of online courses from expert instructors. Build your skills, advance your career, and achieve your learning goals with our comprehensive course platform.
+        </p>
+        <button class="cta-btn">Start Learning Today →</button>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+
+    <section class="featured-courses-section" id="featured-courses">
+      <div class="section-header">
+        <h2>Featured Courses</h2>
+        <p>Discover our most popular and highly-rated courses</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-image">
+            <img src="Img/course-placeholder.jpg" alt="Course Image" />
+            <div class="course-badge">Bestseller</div>
+          </div>
+          <div class="course-content">
+            <h3>Complete Web Development Bootcamp</h3>
+            <p class="instructor">By Sarah Johnson</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (2,341 reviews)</span>
+            </div>
+            <div class="course-meta">
+              <span class="duration">12 weeks</span>
+              <span class="level">Beginner</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$199</span>
+              <button class="add-to-cart-btn" data-course="web-dev">Add to Cart</button>
+            </div>
+          </div>
         </div>
 
-        <footer>
-        <div class="container-footer">
-
-            <div class="col-about">
-                <img src="/Img/Logo.png" alt="unfound">
-                <p>whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="Img/course-placeholder.jpg" alt="Course Image" />
+            <div class="course-badge">New</div>
+          </div>
+          <div class="course-content">
+            <h3>Data Science with Python</h3>
+            <p class="instructor">By Dr. Michael Chen</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (1,876 reviews)</span>
             </div>
+            <div class="course-meta">
+              <span class="duration">10 weeks</span>
+              <span class="level">Intermediate</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$299</span>
+              <button class="add-to-cart-btn" data-course="data-science">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-image">
+            <img src="Img/course-placeholder.jpg" alt="Course Image" />
+            <div class="course-badge">Popular</div>
+          </div>
+          <div class="course-content">
+            <h3>UX/UI Design Masterclass</h3>
+            <p class="instructor">By Emma Rodriguez</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.7 (1,523 reviews)</span>
+            </div>
+            <div class="course-meta">
+              <span class="duration">8 weeks</span>
+              <span class="level">Beginner</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$149</span>
+              <button class="add-to-cart-btn" data-course="ux-ui">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <a href="courses.html" class="view-all-btn">View All Courses →</a>
+      </div>
+    </section>
+
+    <section class="categories-section" id="categories">
+      <div class="section-header">
+        <h2>Course Categories</h2>
+        <p>Explore courses by subject and find what interests you</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programming</h3>
+          <p>Learn to code with modern languages and frameworks</p>
+          <span class="course-count">120+ courses</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Design</h3>
+          <p>Master visual design, UX/UI, and creative tools</p>
+          <span class="course-count">85+ courses</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Business</h3>
+          <p>Develop business skills and entrepreneurship</p>
+          <span class="course-count">95+ courses</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Science</h3>
+          <p>Analyze data and build machine learning models</p>
+          <span class="course-count">60+ courses</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Marketing</h3>
+          <p>Digital marketing, SEO, and social media strategies</p>
+          <span class="course-count">70+ courses</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Photography</h3>
+          <p>Capture stunning photos and master editing</p>
+          <span class="course-count">45+ courses</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <h2>What Our Students Say</h2>
+        <p>Join thousands of satisfied learners who have transformed their careers</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"LearnSpace completely changed my career. The web development course was comprehensive and the instructors were amazing. I landed my dream job within 3 months!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="Img/student1.jpg" alt="Student" />
+            </div>
+            <div class="author-info">
+              <h4>Alex Thompson</h4>
+              <p>Full Stack Developer at TechCorp</p>
+            </div>
+          </div>
+          <div class="testimonial-rating">
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The data science course exceeded my expectations. The hands-on projects and real-world examples made complex concepts easy to understand. Highly recommended!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="Img/student2.jpg" alt="Student" />
+            </div>
+            <div class="author-info">
+              <h4>Maria Garcia</h4>
+              <p>Data Analyst at DataFlow Inc</p>
+            </div>
+          </div>
+          <div class="testimonial-rating">
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"As a designer, I was looking to improve my UX skills. The UX/UI course was perfect - practical, up-to-date, and taught by industry experts."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="Img/student3.jpg" alt="Student" />
+            </div>
+            <div class="author-info">
+              <h4>David Kim</h4>
+              <p>UX Designer at Creative Studio</p>
+            </div>
+          </div>
+          <div class="testimonial-rating">
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>50,000+</h3>
+          <p>Active Students</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Expert Instructors</p>
+        </div>
+        <div class="stat-item">
+          <h3>1,000+</h3>
+          <p>Online Courses</p>
+        </div>
+        <div class="stat-item">
+          <h3>95%</h3>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-card">
+      <div class="content">
+        <div class="main-content">
+          <h1>Start Your Learning Journey Today</h1>
+          <p>
+            Join thousands of students and transform your career with our expert-led courses. 
+            Get started for free and unlock your potential.
+          </p>
+          <button class="cta-btn">Start Learning Free →</button>
+          <p class="contact-sales">Need help choosing? Contact our learning advisors</p>
+          <div class="icons">
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-windows"></i>
+            <i class="fab fa-android"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-modal-content">
+        <div class="cart-modal-header">
+          <h3>Course Added to Cart!</h3>
+          <button class="cart-modal-close" id="cartModalClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="cart-modal-body">
+          <p id="cartModalMessage">Course has been added to your cart.</p>
+          <div class="cart-modal-buttons">
+            <button class="continue-shopping-btn" id="continueShopping">Continue Shopping</button>
+            <button class="view-cart-btn">View Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <div class="col-about">
+          <img src="Img/Logo.png" alt="LearnSpace Logo" />
+          <p>
+            LearnSpace is the leading online learning platform helping millions of students worldwide achieve their goals through quality education and expert instruction.
+          </p>
+        </div>
         <div class="groupInfo">
-                <div class="col">
-                    <h3>Product</h3>
-                    <ul>
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Customer stories</a></li>
-                    </ul>
-                </div>
+          <div class="col">
+            <h3>Courses</h3>
+            <ul>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Data Science</a></li>
+            </ul>
+          </div>
 
-                <div class="col">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help center</a></li>
-                    </ul>
-                </div>
+          <div class="col">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Student Success</a></li>
+            </ul>
+          </div>
 
-                <div class="col">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Media kit</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="try-today">
-                <h3>Try It Today</h3>
-                <p>
-                    Get started for free. Add your whole team as your needs grow.
-                </p>
-                <button class="cta-btn">Start Today →</button>
-            </div>
+          <div class="col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
         </div>
-        </footer>
+        <div class="try-today">
+          <h3>Start Learning Today</h3>
+          <p>Join our community of learners and start building your future.</p>
+          <button class="cta-btn">Get Started →</button>
+        </div>
+      </div>
+    </footer>
 
-        <div class="footer-bottom">
-    <div class="footer-bottom-content">
-    <div class="footer-content-left">
-        <div class="dropdown">
-        <span>English <i class="fas fa-chevron-down"></i></span>
-        <a href="#">Terms & Privacy</a>
-        <a href="#">Security</a>
-        <a href="#">Status</a>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <div class="footer-content-left">
+          <div class="dropdown">
+            <span>English <i class="fas fa-chevron-down"></i></span>
+            <a href="#">Terms & Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Accessibility</a>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
-        &copy; 2021 Whitepace LLC
-    </div>
-    <div class="social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    </div>
+        <div class="copyright">&copy; 2024 LearnSpace LLC</div>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-</body>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+

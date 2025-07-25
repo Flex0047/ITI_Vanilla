@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Courses - LearnSpace</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f8fafc;">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu-header">
+          <img src="Img/Logo.png" alt="LearnSpace Logo" />
+          <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mobile-menu-links">
+          <a href="courses.html">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="cart.html">Cart</a>
+          <div class="mobile-menu-buttons">
+            <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="cta-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="Img/Logo.png" alt="LearnSpace Logo" /></a>
+        </div>
+        <div class="nav-links">
+            <a href="courses.html">Courses</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                Cart <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <div class="buttons">
+                <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+                <button class="cta-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="c-section">
+        <div class="c-text">
+            <h1>Discover Your Next<br>Learning Adventure</h1>
+            <p>
+                Explore our comprehensive library of courses taught by industry experts. From beginner-friendly introductions to advanced masterclasses, find the perfect course to advance your skills and achieve your goals.
+            </p>
+        </div>
+        <div class="c-image"></div>
+    </section>
+
+    <!-- Course Listing Section -->
+    <div class="container course-list-container">
+        <h1>Browse Our Courses</h1>
+
+        <!-- Topics Filter Bar -->
+        <div class="topics-section">
+            <div class="topics-wrapper">
+            <button id="topicsPrev" class="topics-arrow">&#x2190;</button>
+            <div class="topics-scroll-container">
+                <div class="topics-grid">
+                <button class="topic-btn active">All</button>
+                <button class="topic-btn">Programming</button>
+                <button class="topic-btn">Design</button>
+                <button class="topic-btn">Business</button>
+                <button class="topic-btn">Data Science</button>
+                <button class="topic-btn">Marketing</button>
+                <button class="topic-btn">Photography</button>
+                <button class="topic-btn">Finance</button>
+                <button class="topic-btn">Personal Development</button>
+                <button class="topic-btn">IT & Software</button>
+                <button class="topic-btn">Health & Fitness</button>
+                <button class="topic-btn">Music</button>
+                <button class="topic-btn">Language</button>
+                <button class="topic-btn">Teaching</button>
+                </div>
+            </div>
+            <button id="topicsNext" class="topics-arrow">&#x2192;</button>
+            </div>
+        </div>
+
+        <!-- Course Cards -->
+        <div class="courses-list">
+
+            <!-- Programming Courses -->
+            <div class="card" data-topic="Programming">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Complete Web Development Bootcamp</h2>
+                <div class="rating">&#9733; 4.9 <span class="reviews">(2,341 reviews)</span></div>
+                <p class="description">Master HTML, CSS, JavaScript, React, Node.js and become a full-stack developer.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 12 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="web-dev-bootcamp">$199</button>
+            </div>
+            </div>
+
+            <div class="card" data-topic="Programming">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Python Programming Masterclass</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(1,876 reviews)</span></div>
+                <p class="description">Learn Python from scratch and build real-world applications and automation scripts.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 10 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="python-masterclass">$149</button>
+            </div>
+            </div>
+
+            <div class="card" data-topic="Programming">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">React & Redux Complete Guide</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(1,523 reviews)</span></div>
+                <p class="description">Build modern web applications with React, Redux, and the latest JavaScript features.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <button class="price-label add-to-cart-btn" data-course="react-redux">$179</button>
+            </div>
+            </div>
+
+            <!-- Design Courses -->
+            <div class="card" data-topic="Design">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">UX/UI Design Masterclass</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(1,234 reviews)</span></div>
+                <p class="description">Learn user experience design principles and create stunning user interfaces.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="ux-ui-masterclass">$149</button>
+            </div>
+            </div>
+
+            <div class="card" data-topic="Design">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Graphic Design Fundamentals</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(890 reviews)</span></div>
+                <p class="description">Master typography, color theory, and layout design using industry-standard tools.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="graphic-design">$129</button>
+            </div>
+            </div>
+
+            <!-- Business Courses -->
+            <div class="card" data-topic="Business">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Digital Marketing Strategy</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(720 reviews)</span></div>
+                <p class="description">Learn SEO, social media marketing, and digital advertising strategies.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <button class="price-label add-to-cart-btn" data-course="digital-marketing">$159</button>
+            </div>
+            </div>
+
+            <div class="card" data-topic="Business">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Entrepreneurship Essentials</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(650 reviews)</span></div>
+                <p class="description">Start your own business with practical strategies and expert guidance.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 7 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="entrepreneurship">$139</button>
+            </div>
+            </div>
+
+            <!-- Data Science Courses -->
+            <div class="card" data-topic="Data Science">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Data Science with Python</h2>
+                <div class="rating">&#9733; 4.9 <span class="reviews">(1,200 reviews)</span></div>
+                <p class="description">Learn data analysis, visualization, and machine learning with Python and pandas.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 14 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <button class="price-label add-to-cart-btn" data-course="data-science-python">$299</button>
+            </div>
+            </div>
+
+            <div class="card" data-topic="Data Science">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Machine Learning Fundamentals</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(900 reviews)</span></div>
+                <p class="description">Build and deploy machine learning models using scikit-learn and TensorFlow.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 10 weeks</div>
+                <div class="meta-item">Level: Advanced</div>
+                <button class="price-label add-to-cart-btn" data-course="machine-learning">$249</button>
+            </div>
+            </div>
+
+            <!-- Marketing Courses -->
+            <div class="card" data-topic="Marketing">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Content Marketing Mastery</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(540 reviews)</span></div>
+                <p class="description">Create compelling content that attracts and retains customers across all channels.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <button class="price-label add-to-cart-btn" data-course="content-marketing">$119</button>
+            </div>
+            </div>
+
+            <!-- Photography Courses -->
+            <div class="card" data-topic="Photography">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Photography Fundamentals</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(500 reviews)</span></div>
+                <p class="description">Master camera settings, composition, and lighting for stunning photographs.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="photography-fundamentals">$99</button>
+            </div>
+            </div>
+
+            <!-- Finance Courses -->
+            <div class="card" data-topic="Finance">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Personal Finance Management</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(600 reviews)</span></div>
+                <p class="description">Learn budgeting, investing, and financial planning for a secure future.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="personal-finance">$89</button>
+            </div>
+            </div>
+
+            <!-- Personal Development Courses -->
+            <div class="card" data-topic="Personal Development">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Productivity & Time Management</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(700 reviews)</span></div>
+                <p class="description">Boost your productivity and achieve your goals with proven time management techniques.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 3 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="productivity">$69</button>
+            </div>
+            </div>
+
+            <!-- IT & Software Courses -->
+            <div class="card" data-topic="IT & Software">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Cloud Computing with AWS</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(520 reviews)</span></div>
+                <p class="description">Learn cloud infrastructure, deployment, and management using Amazon Web Services.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <button class="price-label add-to-cart-btn" data-course="aws-cloud">$199</button>
+            </div>
+            </div>
+
+            <!-- Health & Fitness Courses -->
+            <div class="card" data-topic="Health & Fitness">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Yoga for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(600 reviews)</span></div>
+                <p class="description">Improve flexibility, strength, and mindfulness with guided yoga sessions.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="yoga-beginners">$79</button>
+            </div>
+            </div>
+
+            <!-- Music Courses -->
+            <div class="card" data-topic="Music">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Guitar Mastery Course</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(500 reviews)</span></div>
+                <p class="description">Learn guitar from basics to advanced techniques with structured lessons.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="guitar-mastery">$109</button>
+            </div>
+            </div>
+
+            <!-- Language Courses -->
+            <div class="card" data-topic="Language">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Spanish for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(700 reviews)</span></div>
+                <p class="description">Start speaking Spanish with practical vocabulary and conversation skills.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="spanish-beginners">$99</button>
+            </div>
+            </div>
+
+            <!-- Teaching Courses -->
+            <div class="card" data-topic="Teaching">
+            <div class="left">
+                <img src="Img/course-placeholder.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Online Teaching Essentials</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(350 reviews)</span></div>
+                <p class="description">Learn to create engaging online lessons and manage virtual classrooms effectively.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <button class="price-label add-to-cart-btn" data-course="online-teaching">$89</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-modal-content">
+        <div class="cart-modal-header">
+          <h3>Course Added to Cart!</h3>
+          <button class="cart-modal-close" id="cartModalClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="cart-modal-body">
+          <p id="cartModalMessage">Course has been added to your cart.</p>
+          <div class="cart-modal-buttons">
+            <button class="continue-shopping-btn" id="continueShopping">Continue Shopping</button>
+            <button class="view-cart-btn">View Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-card">
+        <div class="content">
+            <div class="main-content">
+                <h1>Ready to Start Learning?</h1>
+                <p>Join thousands of students and advance your career with our expert-led courses.</p>
+                <button class="cta-btn">Start Learning Today →</button>
+                <p class="contact-sales">Need help choosing? Contact our learning advisors</p>
+                <div class="icons">
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-android"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="col-about">
+                <img src="Img/Logo.png" alt="LearnSpace Logo">
+                <p>LearnSpace is the leading online learning platform helping millions of students worldwide achieve their goals through quality education and expert instruction.</p>
+            </div>
+            <div class="groupInfo">
+                <div class="col">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Data Science</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Student Success</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="try-today">
+                <h3>Start Learning Today</h3>
+                <p>Join our community of learners and start building your future.</p>
+                <button class="cta-btn">Get Started →</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-content-left">
+                <div class="dropdown">
+                    <span>English <i class="fas fa-chevron-down"></i></span>
+                    <a href="#">Terms & Privacy</a>
+                    <a href="#">Security</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2024 LearnSpace LLC</div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Topic Filtering Script -->
+    <script>
+        // Scroll functionality for topics bar
+        document.getElementById('topicsNext').addEventListener('click', () => {
+            document.querySelector('.topics-scroll-container').scrollBy({ left: 200, behavior: 'smooth' });
+        });
+
+        document.getElementById('topicsPrev').addEventListener('click', () => {
+            document.querySelector('.topics-scroll-container').scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        // Filtering logic
+        const topicButtons = document.querySelectorAll('.topic-btn');
+        const courseCards = document.querySelectorAll('.card');
+
+        topicButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selectedTopic = button.textContent.trim();
+
+                // Update active class
+                topicButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter courses
+                courseCards.forEach(card => {
+                    const cardTopic = card.getAttribute('data-topic');
+                    if (selectedTopic === 'All' || cardTopic === selectedTopic) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whitepace</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css " />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+</head>
+<body style="background-color: #e7ecef;">
+    <nav>
+        <div class="logo">
+            <a href="Index.html"><img src="Img/Logo.png" alt="Whitepace Logo" /></a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+            <a href="#">Solutions <i class="fas fa-chevron-down"></i></a>
+            <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+            <a href="#">Pricing <i class="fas fa-chevron-down"></i></a>
+            <div class="buttons">
+                <button class="login-btn">Login</button>
+                <button class="cta-btn">Try Whitepace free →</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="c-section">
+        <div class="c-text">
+            <h1>Unlock Your Potential<br>with Whitepace Courses</h1>
+            <p>
+                Join thousands of learners on one of the most trusted course platforms. Our expertly crafted courses help you gain real-world skills, boost your career, and achieve your goals. Discover why Whitepace is the go-to destination for quality learning.
+            </p>
+        </div>
+        <div class="c-image"></div>
+    </section>
+
+    <!-- Course Listing Section -->
+    <div class="container course-list-container">
+        <h1>Browse Our Courses</h1>
+
+        <!-- Topics Filter Bar -->
+        <div class="topics-section">
+            <div class="topics-wrapper">
+            <button id="topicsPrev" class="topics-arrow">&#x2190;</button>
+            <div class="topics-scroll-container">
+                <div class="topics-grid">
+                <button class="topic-btn active">All</button>
+                <button class="topic-btn">Design</button>
+                <button class="topic-btn">Development</button>
+                <button class="topic-btn">Marketing</button>
+                <button class="topic-btn">Business</button>
+                <button class="topic-btn">Data Science</button>
+                <button class="topic-btn">Photography</button>
+                <button class="topic-btn">Finance</button>
+                <button class="topic-btn">Personal Development</button>
+                <button class="topic-btn">IT & Software</button>
+                <button class="topic-btn">Health & Fitness</button>
+                <button class="topic-btn">Music</button>
+                <button class="topic-btn">Language</button>
+                <button class="topic-btn">Teaching</button>
+                <button class="topic-btn">Lifestyle</button>
+                <button class="topic-btn">Productivity</button>
+                </div>
+            </div>
+            <button id="topicsNext" class="topics-arrow">&#x2192;</button>
+            </div>
+        </div>
+
+        <!-- Course Cards -->
+        <div class="courses-list">
+
+            <!-- Design Courses -->
+            <!-- ================= -->
+            <div class="card" data-topic="Design">
+            <div class="left">
+                <img src="/Img/course1.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Introduction to UX Design</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(1,234 reviews)</span></div>
+                <p class="description">Learn the fundamentals of user experience design in this beginner-friendly course.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$199</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Design">
+            <div class="left">
+                <img src="/Img/course3.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Graphic Design Essentials</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(890 reviews)</span></div>
+                <p class="description">Master the basics of graphic design, color theory, and typography.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$149</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Design">
+            <div class="left">
+                <img src="/Img/course4.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Advanced UI Design</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(650 reviews)</span></div>
+                <p class="description">Take your UI design skills to the next level with advanced techniques and tools.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 10 weeks</div>
+                <div class="meta-item">Level: Advanced</div>
+                <div class="price-label">$249</div>
+            </div>
+            </div>
+
+            <!-- Development Courses -->
+            <!-- =================== -->
+            <div class="card" data-topic="Development">
+            <div class="left">
+                <img src="/Img/course2.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Full Stack Web Development</h2>
+                <div class="rating">&#9733; 4.9 <span class="reviews">(987 reviews)</span></div>
+                <p class="description">Master frontend and backend development using modern web technologies.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 12 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$399</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Development">
+            <div class="left">
+                <img src="/Img/course5.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">JavaScript for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(1,100 reviews)</span></div>
+                <p class="description">Start coding with JavaScript and build interactive web applications.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$99</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Development">
+            <div class="left">
+                <img src="/Img/course6.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">React & Redux Bootcamp</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(800 reviews)</span></div>
+                <p class="description">Build scalable web apps using React and Redux from scratch.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$299</div>
+            </div>
+            </div>
+
+            <!-- Marketing Courses -->
+            <!-- ================= -->
+            <div class="card" data-topic="Marketing">
+            <div class="left">
+                <img src="/Img/course7.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Digital Marketing Fundamentals</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(720 reviews)</span></div>
+                <p class="description">Learn SEO, SEM, and social media marketing to grow your business online.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$129</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Marketing">
+            <div class="left">
+                <img src="/Img/course8.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Content Marketing Mastery</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(540 reviews)</span></div>
+                <p class="description">Create compelling content that attracts and retains customers.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$99</div>
+            </div>
+            </div>
+
+            <!-- Business Courses -->
+            <!-- ================ -->
+            <div class="card" data-topic="Business">
+            <div class="left">
+                <img src="/Img/course9.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Entrepreneurship 101</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(650 reviews)</span></div>
+                <p class="description">Start your own business with practical strategies and expert guidance.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 7 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$179</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Business">
+            <div class="left">
+                <img src="/Img/course10.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Business Analytics</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(480 reviews)</span></div>
+                <p class="description">Analyze business data to make informed decisions and drive growth.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 9 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$249</div>
+            </div>
+            </div>
+
+            <!-- Data Science Courses -->
+            <!-- ==================== -->
+            <div class="card" data-topic="Data Science">
+            <div class="left">
+                <img src="/Img/course11.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Data Science Bootcamp</h2>
+                <div class="rating">&#9733; 4.9 <span class="reviews">(1,200 reviews)</span></div>
+                <p class="description">Learn Python, statistics, and machine learning for data science careers.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 14 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$499</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Data Science">
+            <div class="left">
+                <img src="/Img/course12.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Applied Machine Learning</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(900 reviews)</span></div>
+                <p class="description">Build real-world machine learning models and deploy them to production.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 10 weeks</div>
+                <div class="meta-item">Level: Advanced</div>
+                <div class="price-label">$399</div>
+            </div>
+            </div>
+
+            <!-- Photography Courses -->
+            <!-- =================== -->
+            <div class="card" data-topic="Photography">
+            <div class="left">
+                <img src="/Img/course13.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Photography Basics</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(500 reviews)</span></div>
+                <p class="description">Master your camera and take stunning photos in any setting.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$89</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Photography">
+            <div class="left">
+                <img src="/Img/course14.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Portrait Photography Masterclass</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(420 reviews)</span></div>
+                <p class="description">Learn lighting, posing, and editing for professional portraits.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$129</div>
+            </div>
+            </div>
+
+            <!-- Finance Courses -->
+            <!-- =============== -->
+            <div class="card" data-topic="Finance">
+            <div class="left">
+                <img src="/Img/course15.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Personal Finance 101</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(600 reviews)</span></div>
+                <p class="description">Manage your money, budget, and invest for a secure future.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$79</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Finance">
+            <div class="left">
+                <img src="/Img/course16.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Investment Strategies</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(350 reviews)</span></div>
+                <p class="description">Learn to invest in stocks, bonds, and real estate for long-term growth.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$149</div>
+            </div>
+            </div>
+
+            <!-- Personal Development Courses -->
+            <!-- ============================ -->
+            <div class="card" data-topic="Personal Development">
+            <div class="left">
+                <img src="/Img/course17.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Time Management Mastery</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(700 reviews)</span></div>
+                <p class="description">Boost your productivity and achieve your goals with proven techniques.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 3 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$59</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Personal Development">
+            <div class="left">
+                <img src="/Img/course18.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Emotional Intelligence</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(480 reviews)</span></div>
+                <p class="description">Develop self-awareness and improve your relationships at work and home.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$89</div>
+            </div>
+            </div>
+
+            <!-- IT & Software Courses -->
+            <!-- ===================== -->
+            <div class="card" data-topic="IT & Software">
+            <div class="left">
+                <img src="/Img/course19.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">IT Support Fundamentals</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(520 reviews)</span></div>
+                <p class="description">Start your IT career with troubleshooting, networking, and security basics.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$109</div>
+            </div>
+            </div>
+            <div class="card" data-topic="IT & Software">
+            <div class="left">
+                <img src="/Img/course20.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Linux Administration</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(410 reviews)</span></div>
+                <p class="description">Manage Linux servers and automate tasks with shell scripting.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$159</div>
+            </div>
+            </div>
+
+            <!-- Health & Fitness Courses -->
+            <!-- ======================== -->
+            <div class="card" data-topic="Health & Fitness">
+            <div class="left">
+                <img src="/Img/course21.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Yoga for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(600 reviews)</span></div>
+                <p class="description">Improve flexibility and reduce stress with guided yoga sessions.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$69</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Health & Fitness">
+            <div class="left">
+                <img src="/Img/course22.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Nutrition & Wellness</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(350 reviews)</span></div>
+                <p class="description">Learn healthy eating habits and create balanced meal plans.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$79</div>
+            </div>
+            </div>
+
+            <!-- Music Courses -->
+            <!-- ============= -->
+            <div class="card" data-topic="Music">
+            <div class="left">
+                <img src="/Img/course23.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Guitar for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(500 reviews)</span></div>
+                <p class="description">Learn chords, strumming, and songs on acoustic guitar.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$99</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Music">
+            <div class="left">
+                <img src="/Img/course24.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Music Production with Ableton</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(320 reviews)</span></div>
+                <p class="description">Produce your own tracks using Ableton Live and industry techniques.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 8 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$159</div>
+            </div>
+            </div>
+
+            <!-- Language Courses -->
+            <!-- ================ -->
+            <div class="card" data-topic="Language">
+            <div class="left">
+                <img src="/Img/course25.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Spanish for Beginners</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(700 reviews)</span></div>
+                <p class="description">Start speaking Spanish with practical vocabulary and conversation skills.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$89</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Language">
+            <div class="left">
+                <img src="/Img/course26.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Business English Communication</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(400 reviews)</span></div>
+                <p class="description">Improve your English for meetings, emails, and presentations.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 5 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$99</div>
+            </div>
+            </div>
+
+            <!-- Teaching Courses -->
+            <!-- ================ -->
+            <div class="card" data-topic="Teaching">
+            <div class="left">
+                <img src="/Img/course27.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Teaching Online: Essentials</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(350 reviews)</span></div>
+                <p class="description">Learn to create engaging online lessons and manage virtual classrooms.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$79</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Teaching">
+            <div class="left">
+                <img src="/Img/course28.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Classroom Management Skills</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(270 reviews)</span></div>
+                <p class="description">Develop effective strategies for managing students and creating a positive environment.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 6 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$109</div>
+            </div>
+            </div>
+
+            <!-- Lifestyle Courses -->
+            <!-- ================= -->
+            <div class="card" data-topic="Lifestyle">
+            <div class="left">
+                <img src="/Img/course29.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Minimalist Living</h2>
+                <div class="rating">&#9733; 4.6 <span class="reviews">(220 reviews)</span></div>
+                <p class="description">Declutter your life and focus on what matters most.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 3 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$49</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Lifestyle">
+            <div class="left">
+                <img src="/Img/course30.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Home Gardening Basics</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(310 reviews)</span></div>
+                <p class="description">Grow your own vegetables and flowers with easy gardening tips.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 4 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$59</div>
+            </div>
+            </div>
+
+            <!-- Productivity Courses -->
+            <!-- ==================== -->
+            <div class="card" data-topic="Productivity">
+            <div class="left">
+                <img src="/Img/course31.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Getting Things Done</h2>
+                <div class="rating">&#9733; 4.8 <span class="reviews">(400 reviews)</span></div>
+                <p class="description">Implement the GTD method to organize your tasks and projects efficiently.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 3 weeks</div>
+                <div class="meta-item">Level: Beginner</div>
+                <div class="price-label">$69</div>
+            </div>
+            </div>
+            <div class="card" data-topic="Productivity">
+            <div class="left">
+                <img src="/Img/course32.jpg" alt="Course Image">
+            </div>
+            <div class="middle">
+                <h2 class="course-title">Focus & Deep Work</h2>
+                <div class="rating">&#9733; 4.7 <span class="reviews">(250 reviews)</span></div>
+                <p class="description">Learn techniques to eliminate distractions and achieve deep focus.</p>
+            </div>
+            <div class="right">
+                <div class="meta-item">Duration: 2 weeks</div>
+                <div class="meta-item">Level: Intermediate</div>
+                <div class="price-label">$49</div>
+            </div>
+            </div>
+
+        </div>
+    <div class="Contact-card">
+        <div class="content">
+            <div class="main-content">
+                <h1>Try Whitepace <br> today</h1>
+                <p>Get started for free. <br> Add your whole team as your needs grow.</p>
+                <button class="cta-btn">Try Taskey Free →</button>
+                <p class="contact-sales">On a big team? Contact sales</p>
+                <div class="icons">
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-android"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="col-about">
+                <img src="/Img/Logo.png" alt="unfound">
+                <p>whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
+            </div>
+            <div class="groupInfo">
+                <div class="col">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help center</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Media kit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="try-today">
+                <h3>Try It Today</h3>
+                <p>Get started for free. Add your whole team as your needs grow.</p>
+                <button class="cta-btn">Start Today →</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-content-left">
+                <div class="dropdown">
+                    <span>English <i class="fas fa-chevron-down"></i></span>
+                    <a href="#">Terms & Privacy</a>
+                    <a href="#">Security</a>
+                    <a href="#">Status</a>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2021 Whitepace LLC</div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topic Filtering Script -->
+    <script>
+        // Scroll functionality for topics bar (unchanged)
+        document.getElementById('topicsNext').addEventListener('click', () => {
+            document.querySelector('.topics-scroll-container').scrollBy({ left: 200, behavior: 'smooth' });
+        });
+
+        document.getElementById('topicsPrev').addEventListener('click', () => {
+            document.querySelector('.topics-scroll-container').scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        // Filtering logic
+        const topicButtons = document.querySelectorAll('.topic-btn');
+        const courseCards = document.querySelectorAll('.card');
+
+        topicButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selectedTopic = button.textContent.trim();
+
+                // Update active class
+                topicButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter courses
+                courseCards.forEach(card => {
+                    const cardTopic = card.getAttribute('data-topic');
+                    if (selectedTopic === 'All' || cardTopic === selectedTopic) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
